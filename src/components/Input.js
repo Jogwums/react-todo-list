@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 
-export default class Input extends Component {
+import './todo.css';
 
+export default class Input extends Component {
 
     render() {
 
@@ -11,10 +12,10 @@ export default class Input extends Component {
             <div className="container mt-5 ">
                 <div className="row h-100">
                     <div  className="offset-2 col-8 ">
-                        <h3 className="bg-primary text-center text-white rounded ">Todo Input</h3>
+                        <h3 className="bg-primary text-center text-dark rounded py-3">Todo List</h3>
                         <form onSubmit={handleSubmit} className="border p-4"> 
                             <div className="row m-0">
-                                <div className="col-1 bg-primary m-0  d-flex align-items-center ">
+                                <div className="col-1 bg-primary m-0  d-flex align-items-center iconbox">
                                     <i style={{color: "white"}} className="icono-list m-0 p-0 "> </i>
                                 </div>
                                 <div className="col-11 m-0 p-0">
@@ -23,7 +24,7 @@ export default class Input extends Component {
                             </div>
                             <button type="submit"
                                 disabled={item? false: true}
-                            className={editItem? "btn btn-success btn-block mt-0 text-uppercase" : "btn btn-outline-primary btn-block mt-0 text-uppercase"}>
+                            className={editItem? "btn btn-success btn-block mt-0 text-uppercase font-weight-bolder" : "btn btn-outline-primary btn-block mt-0 text-uppercase font-weight-bolder"}>
                                 {editItem ? "Edit item" : "Add item"}
                             </button>
                         </form >
