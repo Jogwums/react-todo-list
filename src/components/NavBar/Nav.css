@@ -1,0 +1,22 @@
+
+nav{
+    background-color: lightslategrey;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     align-items: center;
+}
+ nav a{
+     color: white;
+     text-decoration: none;
+     margin: 10px 20px;
+ }
+
+ nav a:hover{
+    color: green;
+    text-decoration: none;
+    transform: scale(1.3);
+}
